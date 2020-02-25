@@ -1,0 +1,152 @@
+body {
+    background-image: url("/adminka/test/kkk.jpg");
+    background-size: cover;
+    background-color: rgba(42, 42, 44, 0.5);
+    background-blend-mode: hue;
+    justify-content: center;
+    display: flex;
+}
+
+.login {
+    position: absolute;
+    background-blend-mode: lighten;
+    background-color: rgba(53, 53, 55, 0.8);
+    top: 30%;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    box-shadow: 0px 1px 2px #161616;
+    padding: 50px;
+}
+
+.login input[type=email] {
+    background-color: #353537;
+    width: 250px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 7px;
+    box-shadow: 0px 1px 2px #161616;
+}
+
+.login input[type=password] {
+    background-color: #353537;
+    width: 250px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 7px;
+    margin-top: 10px;
+    box-shadow: 0px 1px 2px #161616;
+}
+
+.login input[type=button] {
+    width: 260px;
+    height: 40px;
+    background: #ffaa00;
+    border: none;
+    cursor: pointer;
+    color: #353535;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    margin-top: 50px;
+    box-shadow: 0px 1px 2px #161616;
+}
+
+.login input[type=button]:hover {
+    background-color: #3b3b3b;
+    color: #ffaa00;
+}
+
+.login input[type=button]:active {
+    opacity: 0.6;
+}
+
+.login input[type=email]:focus {
+    outline: none;
+    /*border: 1px solid rgba(169, 169, 169, 0.9);*/
+}
+
+.login input[type=password]:focus {
+    outline: none;
+    /*border: 1px solid rgba(169, 169, 169, 0.9);*/
+}
+
+.login input[type=button]:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.error {
+    margin-top: 10px;
+    margin-left: 15px;
+    position: absolute;
+    color: whitesmoke;
+    font-family: monospace;
+}
+
+/*------------------------------MEDIA---------------------------------*/
+
+/*@media screen and (max-width: 1920px) {*/
+/*    .login {*/
+
+/*    }*/
+
+/*    @media screen and (max-width: 1366px) {*/
+/*        .icon_panel {*/
+/*            width: 20%;*/
+/*        }*/
+
+/*        .body_cont {*/
+/*            width: 78%;*/
+/*        }*/
+/*    }*/
+
+/*    @media screen and (max-width: 1199px) {*/
+/*        .icon_panel {*/
+/*            width: 23%;*/
+/*        }*/
+
+/*        .body_cont {*/
+/*            width: 75%;*/
+/*        }*/
+/*    }*/
+
+/*    @media screen and (max-width: 1024px) {*/
+/*        .icon_panel {*/
+/*            width: 28%;*/
+/*        }*/
+
+/*        .body_cont {*/
+/*            width: 70%;*/
+/*        }*/
+/*    }*/
+
+/*    @media screen and (max-width: 767px) {*/
+/*        .icon_panel {*/
+/*            width: 40%;*/
+/*        }*/
+
+/*        .body_cont {*/
+/*            width: 55%;*/
+/*        }*/
+/*    }*/
+
+/*}*/
+
+/*@media screen and (max-width: 320px) {*/
+/*    .login {*/
+/*        left: 0%;*/
+/*    }*/
+/*}*/
