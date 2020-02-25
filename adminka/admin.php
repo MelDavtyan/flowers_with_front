@@ -24,13 +24,32 @@
 <div class="title_box" >
     <h1 class="h4">ADMIN PANEL</h1>
     <img class="logout" src="/adminka/test/logout.png">
-    <img class="aboutUs" src="/adminka/test/icon.png">
-
+    <img class="aboutUs" src="/adminka/test/123.png">
 </div>
 
-<div class="textBox" style="display: none">
-
+<div class="about_mod">
+    <img class="close_cont js-close" src="/adminka/test/close4.png">
+    <div class="about_inp"><span class="about_title">TITLE</span></div>
+    <div class="about_img"></div>
+    <textarea class="about_text"></textarea>
+    <button class="about_edit">EDIT</button>
 </div>
+
+<div class="aboutUsBoxUp">
+    <form class="UpAboutForm" enctype="multipart/form-data">
+        <input class="text_title" maxlength="15" name="inp_name" placeholder="Name" id="text_title" type="text"> <br>
+        <span class="errorName"></span>
+        <input type="hidden" name="className" value="MenuIcons">
+        <input type="hidden" name="actionName" value="aboutUs">
+        <label for="uploadImage" class="custom-file-upload">Icon Upload</label>
+        <span class="errorFile"></span>
+        <input id="uploadImage" name="text-upload" class="text-upload" accept="image/*" type="file"/> <br>
+        <textarea class="text_box" name="text_box"></textarea>
+        <input  class="btn_text" type="submit" value="UPDATE">
+        <img class="close_cont js-close" src="/adminka/test/close4.png">
+    </form>
+</div>
+
 
 <div class="aboutUsBox">
     <form class="textForm" enctype="multipart/form-data">

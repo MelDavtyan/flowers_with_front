@@ -22,6 +22,7 @@
   <component name="ProjectId" id="1Y9yCEEjnMTFJA3p454YKgFiQRk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -50,6 +51,7 @@
       <workItem from="1582368976041" duration="3412000" />
       <workItem from="1582461389547" duration="621000" />
       <workItem from="1582644383056" duration="3264000" />
+      <workItem from="1582658391211" duration="9712000" />
     </task>
     <servers />
   </component>

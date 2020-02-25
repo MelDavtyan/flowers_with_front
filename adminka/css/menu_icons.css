@@ -31,8 +31,6 @@ h1 {
      float: right;
  }
 
-
-
 .logout:hover {
     -webkit-filter: drop-shadow(0 0 3px rgb(255, 165, 0));
     filter: drop-shadow(0 0 4px rgb(255, 165, 0));
@@ -236,7 +234,7 @@ h1 {
     background-color: #007a3d;
     color: white;
     text-shadow: 0px 1px 2px #212121;
-    box-shadow: 0px 1px 2px #161616;
+    box-shadow: 0px 2px 3px #161616;
 }
 
 .conf_cancel, .rtn_cancel, .dlt_cancel {
@@ -256,7 +254,7 @@ h1 {
     background-color: #651b00;
     color: white;
     text-shadow: 0px 1px 2px #212121;
-    box-shadow: 0px 3px 4px #161616;
+    box-shadow: 0px 2px 3px #161616;
 }
 
 .span_del {
@@ -313,7 +311,7 @@ h1 {
     color: #FFA500;
 }
 
-.inp_name {
+.inp_name,.text_title {
     background-color: #474747;
     color: white;
     padding: 20px;
@@ -404,25 +402,131 @@ input[type="file"] {
     font-size: 16px;
 }
 
+
+/*-------------------------------------------ABOUT US_____________________________*/
+
 .aboutUs {
-    margin-top: -35px;
-    margin-right: 50px;
-    width: 30px;
-    height: 30px;
+    margin-top: -40px;
+    margin-right: 70px;
+    width: 40px;
+    height: 40px;
     float: right;
 }
 
-.aboutUsBox{
-    background-image: url("/adminka/test/444.jpg");
+.aboutUs:hover {
+    -webkit-filter: drop-shadow(0 0 3px rgb(214, 255, 0));
+    filter: drop-shadow(0 0 4px rgb(214, 255, 0));
+}
+
+.aboutUs:active {
+    -webkit-filter: drop-shadow(0 0 3px rgb(214, 255, 0));
+    filter: drop-shadow(0 0 6px rgb(214, 255, 0));
+}
+
+/*----------------------------------ABOUT MOD__________________*/
+
+.about_mod{
+    position: absolute;
+    background-color: #2c2c2e;
+    border: none;
+    padding: 20px;
+    display: none;
+    top: 20%;
+    left: 25%;
+    box-shadow: 0px 1px 2px #161616;
+}
+
+.about_inp{
+    background-color: #474747;
+    margin-left: 250px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    outline: none;
+    justify-content: center;
+    display: flex;
+}
+
+.about_title{
+   color: #ff2f00;
+}
+
+.about_img{
+    background-color: #8c8c8e;
+    float: left;
+    border: none;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+}
+.about_text{
+    background-color: #4b4b4b;
+    float: left;
+    color: white;
+    font-size: 0.8em;
+    padding: 10px;
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+}
+/*----------------------------about btn--------------------*/
+
+
+.about_edit{
+    background-color: #00b650;
+    color: white;
+    text-shadow: 0px 1px 2px #212121;
+    box-shadow: 0px 2px 3px #161616;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin-left: -100px;
+    margin-top: 370px;
+    float: left;
+  }
+
+.about_edit:hover {
+    background-color: #007a3d;
+    color: white;
+    text-shadow: 0px 1px 2px #212121;
+    box-shadow: 0px 2px 3px #161616;
+}
+
+/*.about_add{*/
+/*    background-color: #981c00;*/
+/*    color: white;*/
+/*    text-shadow: 0px 1px 2px #212121;*/
+/*    box-shadow: 0px 2px 3px #161616;*/
+/*    border: none;*/
+/*    width: 100px;*/
+/*    height: 50px;*/
+/*    margin-left: 40px;*/
+/*}*/
+
+/*.about_add:hover {*/
+/*    background-color: #651b00;*/
+/*    color: white;*/
+/*    text-shadow: 0px 1px 2px #212121;*/
+/*    box-shadow: 0px 2px 3px #161616;*/
+/*}*/
+
+
+
+
+.aboutUsBox,.aboutUsBoxUp{
+    background-image: url("/adminka/test/111.jpg");
     background-color: rgba(255, 253, 245, 0.5);
     background-blend-mode: hue;
     background-size: cover;
+    transform: translate(-50%, -50%);
     position: fixed;
     width: 400px;
     height: 600px;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 5px 5px 5px #161616;
     color: #FFFFFF;
     font-weight: bold;
@@ -434,9 +538,16 @@ input[type="file"] {
 }
 
 .text_box{
+    background-color: #4b4b4b;
+    color: white;
+    font-size: 0.8em;
+    padding: 10px;
     width: 300px;
     height: 300px;
     margin-top: 80px;
+    outline: none;
+    border: none;
+    box-shadow: inset 0 2 3px #000000;
 
 }
 
@@ -456,6 +567,10 @@ input[type="file"] {
     cursor: pointer;
     box-shadow: 0px 1px 2px #161616;
 }
+
+/*-----------------------------------------MEDIA_______________________________________________*/
+
+
 
 
 @media screen and (max-width: 1920px) {

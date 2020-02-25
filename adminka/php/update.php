@@ -37,5 +37,6 @@
 //  `title` varchar(255) NULL,
 //  `text` text  NULL,
 // `image` varchar(255) NOT NULL,
+//  `flag` varchar (255) NOT NULL,
 //  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 //) ENGINE=InnoDB DEFAULT CHARSET=utf8;
