@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a687350d-ffa2-4f78-998e-e6e13322d166" name="Default Changelist" comment="" />
+    <list default="true" id="a687350d-ffa2-4f78-998e-e6e13322d166" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminka/php/MenuIcons.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminka/php/MenuIcons.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Y9yCEEjnMTFJA3p454YKgFiQRk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -45,7 +49,7 @@
       <updated>1582368974297</updated>
       <workItem from="1582368976041" duration="3412000" />
       <workItem from="1582461389547" duration="621000" />
-      <workItem from="1582644383056" duration="1375000" />
+      <workItem from="1582644383056" duration="3264000" />
     </task>
     <servers />
   </component>

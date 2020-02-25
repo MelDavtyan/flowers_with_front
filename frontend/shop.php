@@ -4,13 +4,13 @@ $obj = new MenuItems('localhost', 'root', '', 'flowers');
 if (isset($_GET['id']) || isset($_GET['page'])) {
     $id = $_GET['id'];
     if (!isset($_GET['page'])) $page = 1; else $page = $_GET['page'];
-    $count_query = $obj->mysqli->query("SELECT COUNT(*) FROM `menu_items` ");
+    $count_query = $obj->mysqli->query("SELECT COUNT(*) FROM `menu_items` WHERE `status` = 'show' ");
     $count_array = $count_query->fetch_array(MYSQLI_NUM);
     $count = $count_array[0];
     $limit = 8;
     $start = ($page * $limit) - $limit;
     $length = ceil($count / $limit);
-    $items = $obj->mysqli->query("SELECT * FROM `menu_items` WHERE `menu_id` = $id ORDER BY `id` DESC LIMIT $start , $limit");
+    $items = $obj->mysqli->query("SELECT * FROM `menu_items` WHERE `menu_id` = $id AND `status` = 'show' ORDER BY `id` DESC LIMIT $start , $limit");
     function pagination($length, $page, $id)
     {
         for ($i = 1; $i <= $length; $i++) {
@@ -94,8 +94,6 @@ if (isset($_GET['shopId'])) {
                                         </div>';
                                         }
                                         pagination($length, $page, $id);
-                                    } else {
-                                        echo "ERRRRORRRRR";
                                     }
                                     ?>
 

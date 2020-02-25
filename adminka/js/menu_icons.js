@@ -11,6 +11,7 @@ $(document).ready(function () {
         $('.itemForm')[0].reset();
         $('.body_cont').css('filter', 'none');
         $('.aboutUsBox').hide();
+        $('.textForm').trigger("reset");
     })
 
     $('.js-close').on('click',function () {
@@ -247,18 +248,21 @@ $(document).ready(function () {
             cache: false,
             processData: false,
             data: new FormData(this),
-        success: function (response){
-            console.log(response);
-            console.log(response[0]['image']);
-            $('.aboutUsBox').hide()
-            $('.textBox').show();
-            $('.textBox').append('<div class="banner-frame"> <img class="img-fluid" src="'+ response[0]['image']+'" alt="">\n' +
-                    '                    </div>\n' +
-                    '                </div>\n' +
-                    '                <div class="col-lg-6">\n' +
-                    '                    <h2 class="noo-sh-title-top">'+response[0]['title']+'</h2>\n' +
-                    '                    <p style="color: red">'+ response[0]['text'] +'</p>\n' +
-                    '               </div>')
+            success: function (response){
+                console.log(response);
+                console.log(response[0]['image']);
+                $('.aboutUsBox').hide()
+                $('.textBox').show();
+                $('.textBox').append('<div class="banner-frame"> <img class="img-fluid" src="'+ response[0]['image']+'" alt="">\n' +
+                        '                    </div>\n' +
+                        '                </div>\n' +
+                        '                <div class="col-lg-6">\n' +
+                        '                    <h2 class="noo-sh-title-top">'+response[0]['title']+'</h2>\n' +
+                        '                    <p style="color: red">'+ response[0]['text'] +'</p>\n' +
+                        '               </div>')
+
+                $('.textForm').trigger("reset");
+
             }
         })
 

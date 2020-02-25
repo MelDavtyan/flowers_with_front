@@ -123,6 +123,7 @@ class MenuIcons
 
     public function gal_btn(){
         $menuIconNames = $this->query("SELECT `name`,`id` FROM `menu_icons`");
+//        echo $this->mysqli->error
 
         echo json_encode($menuIconNames);
     }
@@ -131,10 +132,17 @@ class MenuIcons
     public function aboutUs ($title,$text)
     {
         $this->checkImage($_FILES['text-upload']);
-        $this->mysqli->query("INSERT INTO `aboutus` (title,image,text) VALUES ('$title','$this->imagePath','$text')");
+        $allFromAboutUs = $this->query("SELECT * FROM `aboutus`");
+//        print_r($allFromAboutUs[0]['flag']);die;
+        if($allFromAboutUs){
+            if($allFromAboutUs[0]['flag'] == 'about us'){
+                $this->mysqli->query("UPDATE `aboutus` SET title = '$title',image = '$this->imagePath',text = '$text',flag = 'about us'") ;
+            }
+        }else{
+            $this->mysqli->query("INSERT INTO `aboutus` (title,image,text,flag) VALUES ('$title','$this->imagePath','$text','about us')");
+        }
 
-        $allIcons = $this->query("SELECT * FROM `aboutus` WHERE `image` = '$this->imagePath'");
-
+       $allIcons = $this->query("SELECT * FROM `aboutus` WHERE `image` = '$this->imagePath'");
 
         echo $this->mysqli->error;
         echo json_encode($allIcons);

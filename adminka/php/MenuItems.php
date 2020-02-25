@@ -207,7 +207,7 @@ class MenuItems
 
     public function get_last_products()
     {
-        $items = $this->mysqli->query("SELECT * FROM `menu_items` ORDER BY id DESC LIMIT 3");
+        $items = $this->mysqli->query("SELECT * FROM `menu_items` WHERE `status` = 'show' ORDER BY id DESC LIMIT 3");
         $itemListS = [];
         while ($row = mysqli_fetch_assoc($items)) {
 
@@ -219,7 +219,7 @@ class MenuItems
 
     public function getSale()
     {
-        $sale = $this->mysqli->query("SELECT * FROM `menu_items` WHERE `discount` = 'on' ORDER BY id DESC LIMIT 4");
+        $sale = $this->mysqli->query("SELECT * FROM `menu_items` WHERE `discount` = 'on' AND `status` = 'show' ORDER BY id DESC LIMIT 4");
         $itemListS = [];
         while ($row = mysqli_fetch_assoc($sale)) {
 
@@ -230,7 +230,7 @@ class MenuItems
 
     public function slider()
     {
-        $slider = $this->mysqli->query("SELECT `path` FROM `menu_items` LIMIT 10");
+        $slider = $this->mysqli->query("SELECT `path` FROM `menu_items` WHERE `status` = 'show' LIMIT 10");
         $imageOut = '';
         while ($row = mysqli_fetch_assoc($slider)) {
             $imageOut .= '<div class="item">
@@ -263,7 +263,7 @@ class MenuItems
 
 
 
-        $sale = $this->mysqli->query("SELECT `path` FROM `menu_items` ORDER BY `id` DESC LIMIT $start_from, $record_per_page ");
+        $sale = $this->mysqli->query("SELECT `path` FROM `menu_items` WHERE `status` = 'show' ORDER BY `id` DESC LIMIT $start_from, $record_per_page ");
 
         while ($row = mysqli_fetch_assoc($sale)) {
             $output .= '    <div class="col-lg-3 col-md-6 special-grid">' .
@@ -274,7 +274,7 @@ class MenuItems
                 '            </div>'.
                 '            </div>';
         }
-        $page_query = "SELECT * FROM `menu_items`  ORDER BY `id` DESC";
+        $page_query = "SELECT * FROM `menu_items` WHERE `status` = 'show' ORDER BY `id` DESC";
         $page_result = $this->mysqli->query($page_query);
         $total_records = mysqli_num_rows($page_result);
         $total_pages = ceil($total_records / $record_per_page);
@@ -292,7 +292,7 @@ class MenuItems
     public function gallaryImg()
     {
         $menuId = $_POST["menuId"];
-        $itemListS = $this->query("SELECT * FROM `menu_items` WHERE `menu_id` = '$menuId'");
+        $itemListS = $this->query("SELECT * FROM `menu_items` WHERE `menu_id` = '$menuId' AND `status` = 'show'");
         echo json_encode($itemListS);
     }
 
