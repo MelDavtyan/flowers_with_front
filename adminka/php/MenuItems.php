@@ -266,7 +266,7 @@ class MenuItems
         $sale = $this->mysqli->query("SELECT `path` FROM `menu_items` WHERE `status` = 'show' ORDER BY `id` DESC LIMIT $start_from, $record_per_page ");
 
         while ($row = mysqli_fetch_assoc($sale)) {
-            $output .= '    <div class="col-lg-3 col-md-6 special-grid">' .
+            $output .= '    <div class="col-lg-3 col-md-6 ">' .
                 '            <div class="products-single fix">' .
                 '            <div class="box-img-hover">' .
                 '            <img src="' . $row['path'] . '" class="img-fluid" alt="Image">'.
@@ -274,15 +274,19 @@ class MenuItems
                 '            </div>'.
                 '            </div>';
         }
+
+
         $page_query = "SELECT * FROM `menu_items` WHERE `status` = 'show' ORDER BY `id` DESC";
         $page_result = $this->mysqli->query($page_query);
         $total_records = mysqli_num_rows($page_result);
         $total_pages = ceil($total_records / $record_per_page);
+        $paginationGal = '';
         for ($i = 1; $i <= $total_pages; $i++) {
-            $output .= '<div class="pagination_btn"><span class = "pagination_link" id="' . $i . '">' . $i . '</span></div>';
+            $paginationGal .= '<div class="pagination_btn active"><span class = "pagination_link" id="' . $i . '">' . $i . '</span></div>';
         }
         $res = [
             'html' => $output,
+            'paginationGal' => $paginationGal,
         ];
 //        print_r($res['html']);die;
         echo json_encode($res);

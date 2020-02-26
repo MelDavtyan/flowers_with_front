@@ -68,7 +68,7 @@ if (isset($_GET['shopId'])) {
                                     if ($items) {
                                         while ($row = $items->fetch_assoc()) {
                                             echo '
-                                        <div class="col-xl-4 col-lg-3  col-md-4 col-sm-6 special-grid best-seller">
+                                        <div class="col-xl-3 col-lg-3  col-md-4 col-sm-6 special-grid best-seller">
                                             <div class="products-single container">
                                                 <div class="box-img-hover">
                                                     <div class="type-lb">';
@@ -168,90 +168,90 @@ if (isset($_GET['shopId'])) {
 <!-- End Shop Page -->
 
 <!-- Start Instagram Feed  -->
-<div class="instagram-box">
-    <div class="main-instagram owl-carousel owl-theme">
-        <div class="item">
-            <div class="ins-inner-box">
-                <img src="images/instagram-img-01.jpg" alt=""/>
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <img src="images/instagram-img-02.jpg" alt=""/>
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <img src="images/instagram-img-03.jpg" alt=""/>
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <img src="images/instagram-img-04.jpg" alt=""/>
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <img src="images/instagram-img-05.jpg" alt=""/>
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <img src="images/instagram-img-06.jpg" alt=""/>
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <img src="images/instagram-img-07.jpg" alt=""/>
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <img src="images/instagram-img-08.jpg" alt=""/>
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <img src="images/instagram-img-09.jpg" alt=""/>
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <img src="images/instagram-img-05.jpg" alt=""/>
-                <div class="hov-in">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--<div class="instagram-box">-->
+<!--    <div class="main-instagram owl-carousel owl-theme">-->
+<!--        <div class="item">-->
+<!--            <div class="ins-inner-box">-->
+<!--                <img src="images/instagram-img-01.jpg" alt=""/>-->
+<!--                <div class="hov-in">-->
+<!--                    <a href="#"><i class="fab fa-instagram"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            <div class="ins-inner-box">-->
+<!--                <img src="images/instagram-img-02.jpg" alt=""/>-->
+<!--                <div class="hov-in">-->
+<!--                    <a href="#"><i class="fab fa-instagram"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            <div class="ins-inner-box">-->
+<!--                <img src="images/instagram-img-03.jpg" alt=""/>-->
+<!--                <div class="hov-in">-->
+<!--                    <a href="#"><i class="fab fa-instagram"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            <div class="ins-inner-box">-->
+<!--                <img src="images/instagram-img-04.jpg" alt=""/>-->
+<!--                <div class="hov-in">-->
+<!--                    <a href="#"><i class="fab fa-instagram"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            <div class="ins-inner-box">-->
+<!--                <img src="images/instagram-img-05.jpg" alt=""/>-->
+<!--                <div class="hov-in">-->
+<!--                    <a href="#"><i class="fab fa-instagram"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            <div class="ins-inner-box">-->
+<!--                <img src="images/instagram-img-06.jpg" alt=""/>-->
+<!--                <div class="hov-in">-->
+<!--                    <a href="#"><i class="fab fa-instagram"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            <div class="ins-inner-box">-->
+<!--                <img src="images/instagram-img-07.jpg" alt=""/>-->
+<!--                <div class="hov-in">-->
+<!--                    <a href="#"><i class="fab fa-instagram"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            <div class="ins-inner-box">-->
+<!--                <img src="images/instagram-img-08.jpg" alt=""/>-->
+<!--                <div class="hov-in">-->
+<!--                    <a href="#"><i class="fab fa-instagram"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            <div class="ins-inner-box">-->
+<!--                <img src="images/instagram-img-09.jpg" alt=""/>-->
+<!--                <div class="hov-in">-->
+<!--                    <a href="#"><i class="fab fa-instagram"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            <div class="ins-inner-box">-->
+<!--                <img src="images/instagram-img-05.jpg" alt=""/>-->
+<!--                <div class="hov-in">-->
+<!--                    <a href="#"><i class="fab fa-instagram"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 <!-- End Instagram Feed  -->
 
 <?php include_once "footer.php" ?>

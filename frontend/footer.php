@@ -13,14 +13,19 @@
 					</div>
 					<div class="col-lg-4 col-md-12 col-sm-12">
 						<div class="footer-top-box">
-							<h3>Newsletter</h3>
+							<h3>Contact Us</h3>
 							<form class="newsletter-box">
-								<div class="form-group">
-									<input class="" type="email" name="Email" placeholder="Email Address*" />
-									<i class="fa fa-envelope"></i>
-								</div>
-								<button class="btn hvr-hover" type="submit">Submit</button>
-							</form>
+                                <ul>
+                                    <li>
+                                        <p>Address: Michael I. Days 9000 <br>Preston Street Wichita,<br> KS 87213 </p>
+                                    </li><br>
+                                    <li>
+                                        <p>Phone: +1-888 705 770</p>
+                                    </li><br>
+                                    <li>
+                                        <p>Email: contactinfo@gmail.com</p>
+                                    </li>
+                                </ul>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-12 col-sm-12">

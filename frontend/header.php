@@ -53,13 +53,13 @@
                         <li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
                         <li class="dropdown">
-                            <a href="#" class="nav-link dropdown-toggle arrow menu_item_shop" data-toggle="dropdown">SHOP</a>
+                            <a href="#" class="nav-link dropdown-toggle menu_item_shop" data-toggle="dropdown">SHOP</a>
                             <ul class="dropdown-menu shop_item_names">
 
                             </ul>
                         </li>
                         <li class="nav-item gallary"><a class="nav-link" href="gallery.php">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact-us.php">Contact Us</a></li>
+<!--                        <li class="nav-item"><a class="nav-link" href="contact-us.php">Contact Us</a></li>-->
                     </ul>
                 </div>
 

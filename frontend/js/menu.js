@@ -43,7 +43,7 @@ $(document).ready(function () {
                     $(".shop_item_names").empty();
                     for (let i = 0; i < items.length; i++) {
                         console.log(items[i].id);
-                        $(".shop_item_names").append('<li><a href="../frontend/shop.php?id='+items[i].id+'">' + items[i].name + '</a></li>');
+                        $(".shop_item_names").append('<li><a href="../frontend/shop.php?id=' + items[i].id + '">' + items[i].name + '</a></li>');
                     }
                 }
             }
@@ -74,7 +74,7 @@ $(document).ready(function () {
                     '           <div class="mask-icon">\n' +
                     '<ul>\n' +
                     '<li>\n' +
-                    '<a href="../frontend/shop.php?shopId='+res[i].id+'" data-toggle="tooltip" data-placement="right" title="View">\n' +
+                    '<a href="../frontend/shop.php?shopId=' + res[i].id + '" data-toggle="tooltip" data-placement="right" title="View">\n' +
                     '<img src="/frontend/images/eye2.png" class="img_view">\n' + '</a>\n' + '</li>\n' + '</ul>\n' +
                     '            </div>\n' +
                     '            <div class="why-text">\n' +
@@ -85,7 +85,8 @@ $(document).ready(function () {
                     let newPrice = res[i]['price'] - (res[i]['price'] * res[i]['bonus'] / 100);
                     inner += '<h5><del>' + res[i]['price'] + '</del> ' +
                         '</h5><h5>' + newPrice + '</h5>';
-                };
+                }
+                ;
                 '            </div>\n';
                 '        </div>\n';
                 $('.special-list-home').append(inner);
@@ -124,9 +125,10 @@ $(document).ready(function () {
                 let res = JSON.parse(response);
                 console.log(res);
                 $('.special-list_gal').empty();
+                $('.pagination').empty();
 
-                    $('.special-list_gal').append(res['html']);
-
+                $('.special-list_gal').append(res['html']);
+                $('.pagination').append(res['paginationGal']);
             }
         })
         $(document).on('click', '.pagination_btn', function () {
@@ -153,7 +155,7 @@ $(document).ready(function () {
                 let items = JSON.parse(resp);
                 // $(".button-group").empty();
                 for (let i = 0; i < items.length; i++) {
-                    $(".button-group").append("<button data-id='"+ items[i].id +"' class='gal_gal'>" + items[i].name + "</button>");
+                    $(".button-group").append("<button data-id='" + items[i].id + "' class='gal_gal'>" + items[i].name + "</button>");
                 }
             }
 
@@ -186,7 +188,6 @@ $(document).ready(function () {
             })
         }
     })
-
 
 
 })

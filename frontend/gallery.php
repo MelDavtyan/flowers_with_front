@@ -28,11 +28,13 @@
             </div>
         </div>
 
-        <div class="row special-list_gal"></div>
+        <div class="row special-list_gal">
 
+        </div>
+        <div class="pagination container"></div>
     </div>
 </div>
-</div>
+
 <!-- End Gallery  -->
 
 <?php include_once "footer.php" ?>

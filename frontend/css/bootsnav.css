@@ -144,17 +144,17 @@ nav.bootsnav.navbar-full .navbar-collapse .nav-full::-webkit-scrollbar {
     width: 0;
 }
 
-nav.bootsnav.navbar-full .navbar-collapse .nav-full::-moz-scrollbar {
-    width: 0;
-}
+/*nav.bootsnav.navbar-full .navbar-collapse .nav-full::-moz-scrollbar {*/
+/*    width: 0;*/
+/*}*/
 
-nav.bootsnav.navbar-full .navbar-collapse .nav-full::-ms-scrollbar {
-    width: 0;
-}
+/*nav.bootsnav.navbar-full .navbar-collapse .nav-full::-ms-scrollbar {*/
+/*    width: 0;*/
+/*}*/
 
-nav.bootsnav.navbar-full .navbar-collapse .nav-full::-o-scrollbar {
-    width: 0;
-}
+/*nav.bootsnav.navbar-full .navbar-collapse .nav-full::-o-scrollbar {*/
+/*    width: 0;*/
+/*}*/
 
 
 nav.bootsnav.navbar-full .navbar-collapse ul.nav{
@@ -546,7 +546,7 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:
     nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a:hover,
     nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a:hover{
         background-color: transparent;
-		color: #b0b435;
+		color: #b4003a;
 		-ms-transform: translateX(3px);
 		-webkit-transform: translateX(3px);
 		transform: translateX(3px);
@@ -1272,9 +1272,9 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:
     
     /* Tabs
     =================================*/ 
-    nav.navbar.bootsnav .megamenu-content.tabbed{
-        padding-left: 0 !mportant;
-    }
+    /*nav.navbar.bootsnav .megamenu-content.tabbed{*/
+    /*    padding-left: 0 !mportant;*/
+    /*}*/
     
     nav.navbar.bootsnav .tabbed > li{
         padding: 25px 0;
