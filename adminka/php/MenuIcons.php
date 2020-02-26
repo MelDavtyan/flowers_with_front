@@ -65,7 +65,7 @@ class MenuIcons
 
     public function getAllIconNames($iconName)
     {
-        $menuIconNames = $this->query("SELECT `name`,`id` FROM `menu_icons`");
+        $menuIconNames = $this->query("SELECT `name`,`id` FROM `menu_icons` WHERE `status` IS NULL ");
 //        print_r($menuIconNames);die;
 
         echo json_encode($menuIconNames);
@@ -122,7 +122,7 @@ class MenuIcons
     }
 
     public function gal_btn(){
-        $menuIconNames = $this->query("SELECT `name`,`id` FROM `menu_icons`");
+        $menuIconNames = $this->query("SELECT `name`,`id` FROM `menu_icons` WHERE `status` IS NULL");
 //        echo $this->mysqli->error
 
         echo json_encode($menuIconNames);
@@ -146,6 +146,37 @@ class MenuIcons
 
         echo $this->mysqli->error;
         echo json_encode($allIcons);
+    }
+
+    public function editAboutUsData(){
+//        print_r($_POST);
+        $dataFromAboutUs = $this->query("SELECT * FROM `aboutus`");
+        echo json_encode($dataFromAboutUs);
+    }
+
+    public function UpdateAboutUs($title,$text){
+//        print_r($_POST);
+//        print_r($_FILES['text-upload']);die;
+        $this->checkImage($_FILES['text-upload']);
+        if (!empty($_FILES["text-upload"]) && $_FILES["text-upload"]["size"] > 0){
+            $this->imagePath = str_replace('..', '/adminka', $this->target_file);
+        }else{
+            $this->imagePath = $this->mysqli->query("SELECT `image` FROM `aboutus`")->fetch_row()[0];
+        }
+        $this->mysqli->query("UPDATE `aboutus` SET `title` = '$title',`text` = '$text',`image` = '$this->imagePath',`flag` = 'about us'");
+
+
+        $allIcons = $this->query("SELECT * FROM `aboutus` WHERE `image` = '$this->imagePath'");
+//        print_r($allIcons);die;
+
+        echo json_encode($allIcons);
+    }
+
+    public function getAllItemsFromAboutUs(){
+       $allItemsFromAboutUs = $this->query("SELECT * FROM `aboutus`");
+//       print_r($allItemsFromAboutUs);die;
+        echo json_encode($allItemsFromAboutUs);
+
     }
 
 }

@@ -12,7 +12,9 @@ $(document).ready(function () {
         $('.itemForm')[0].reset();
         $('.body_cont').css('filter', 'none');
         $('.aboutUsBox').hide();
-        $('.aboutUsBoxUp').hide();
+        $('.textForm .errorName').html('');
+        $('.textForm .errorTextArea').html('');
+        $('.textForm .errorFile').html('');
         $('.textForm').trigger("reset");
     })
 
@@ -165,7 +167,7 @@ $(document).ready(function () {
                 window.location.reload();
             }
         })
-    })
+    });
 
     $('.conf_cancel').on('click', function () {
         $('.conf_box').hide();
@@ -230,17 +232,65 @@ $(document).ready(function () {
         });
     })
 
-    $('.logout').on('click', function () {
-        window.location.href = 'index.php';
+    $.ajax({
+        url : 'php/menu_icons.php',
+        method : 'POST',
+        data : {
+            className : 'MenuIcons',
+            actionName : 'getAllItemsFromAboutUs'
+        },
+        success : function (response) {
+            let res = JSON.parse(response);
+            // console.log(res);
+            if(res){
+                $('.about_mod').html(' <img class="close_cont js-close" src="/adminka/test/close4.png" >\n' +
+                    '    <div class="about_inp"><span class="about_title">'+res[0]['title']+'</span></div>\n' +
+                    '    <div class="about_img"><img src="'+res[0]['image']+'" alt="image" style="width: 300px;height: 300px;"></div>\n' +
+                    '    <textarea class="about_text">'+res[0]['text']+'</textarea>\n' +
+                    '    <button class="about_edit" data-id="'+res[0]['id']+'">EDIT</button>')
+            }
+
+        }
     })
 
+
     $('.aboutUs').on('click', function () {
-        $('.aboutUsBox').show()
+        $.ajax({
+            url : 'php/menu_icons.php',
+            method : 'POST',
+            data : {
+                className : 'MenuIcons',
+                actionName : 'getAllItemsFromAboutUs'
+            },
+            success : function (response) {
+                let res = JSON.parse(response);
+                // console.log(res);
+                if(res.length > 0){
+                    $('.about_mod').show();
+                }else{
+                    $('.aboutUsBox').show();
+                }
+            }
+        })
     })
 
     //$('body').delegate('.textForm','submit', function () {
     $('.textForm').on('submit', function (event) {
         event.preventDefault();
+       let text_title =  $('.textForm .text_title').val();
+        let text_box = $(' .textForm .text_box').val();
+        let text_upload = $(' .textForm .text-upload').val();
+
+        if (text_title == null || text_title == ''){
+            $('.textForm .errorName').html('Please fill in the blank fields');
+            return false;
+        }else if(text_box == null || text_box == ''){
+            $('.textForm .errorTextArea').html('Please fill in the blank fields');
+            return false;
+        }else if(text_upload == null || text_upload == ''){
+            $('.textForm .errorFile').html('Please select file');
+            return false;
+        }
 
         $.ajax({
             url: 'php/menu_icons.php',
@@ -254,16 +304,64 @@ $(document).ready(function () {
                 console.log(response);
                 console.log(response[0]['image']);
                 $('.aboutUsBox').hide()
-                $('.textBox').show();
-                $('.textBox').append('<div class="banner-frame"> <img class="img-fluid" src="' + response[0]['image'] + '" alt="">\n' +
-                    '                    </div>\n' +
-                    '                </div>\n' +
-                    '                <div class="col-lg-6">\n' +
-                    '                    <h2 class="noo-sh-title-top">' + response[0]['title'] + '</h2>\n' +
-                    '                    <p style="color: red">' + response[0]['text'] + '</p>\n' +
-                    '               </div>')
+                $('.about_mod').show();
+                $('.about_mod').html(' <img class="close_cont js-close" src="/adminka/test/close4.png">\n' +
+                    '    <div class="about_inp"><span class="about_title">'+response[0]['title']+'</span></div>\n' +
+                    '    <div class="about_img"><img src="'+response[0]['image']+'" alt="image" style="width: 300px;height: 300px;"></div>\n' +
+                    '    <textarea class="about_text">'+response[0]['text']+'</textarea>\n' +
+                    '    <button class="about_edit" data-id="'+response[0]['id']+'">EDIT</button>')
 
                 $('.textForm').trigger("reset");
+
+
+                $('.js-close').on('click', function (){
+                    $('.about_mod').hide();
+                    $('.aboutUsBoxUp').hide();
+                })
+
+                $('.about_mod').on('click','.about_edit',function () {
+                    $.ajax({
+                        url : 'php/menu_icons.php',
+                        method : 'POST',
+                        data : {
+                            className : 'MenuIcons',
+                            actionName : 'editAboutUsData',
+                            editId :  $(this).attr('data-id'),
+                        },
+                        success : function (response) {
+                            let res = JSON.parse(response);
+                            $('.about_mod').hide();
+                            $('.aboutUsBoxUp').show();
+                            $('.text_title').val(res[0]['title']);
+                            $('.text_box').text(res[0]['text']);
+                        }
+                    })
+                })
+
+            }
+        })
+    })
+
+    $('.UpAboutForm').on('submit',function (event) {
+        event.preventDefault();
+        $.ajax({
+            url: 'php/menu_icons.php',
+            dataType: "JSON",
+            method: 'POST',
+            contentType: false,
+            cache: false,
+            processData: false,
+            data: new FormData(this),
+            success : function (response) {
+                console.log(response);
+                $('.aboutUsBoxUp').hide();
+                $('.about_mod').show();
+                // $('.about_mod').empty();
+                $('.about_mod').html('<img class="close_cont js-close" src="/adminka/test/close4.png">\n' +
+                    '    <div class="about_inp"><span class="about_title">'+response[0]['title']+'</span></div>\n' +
+                    '    <div class="about_img"><img src="'+response[0]['image']+'" alt="image" style="width: 300px;height: 300px;"></div>\n' +
+                    '    <textarea class="about_text">'+response[0]['text']+'</textarea>\n' +
+                    '    <button class="about_edit" data-id="'+response[0]['id']+'">EDIT</button>')
 
             }
         })
@@ -273,5 +371,9 @@ $(document).ready(function () {
         $('.about_mod').hide();
         $('.aboutUsBoxUp').show();
 
+    })
+
+    $('.logout').on('click', function () {
+        window.location.href = 'index.php';
     })
 });

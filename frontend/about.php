@@ -35,7 +35,7 @@ $aboutAs = $menuIcon->mysqli->query("SELECT * FROM `aboutus`")->fetch_assoc();
             <div class="row textBox">
                 <div class="col-lg-6">
                     <div class="banner-frame">
-                        <img class="img-fluid" src="<?php echo $aboutAs['image']; ?>" alt="about us" />
+                        <img class="img-fluid" src="<?php echo $aboutAs['image']; ?>" />
                     </div>
                 </div>
                 <div class="col-lg-6">

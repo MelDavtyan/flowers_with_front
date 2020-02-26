@@ -28,22 +28,18 @@
 </div>
 
 <div class="about_mod">
-    <img class="close_cont js-close" src="/adminka/test/close4.png">
-    <div class="about_inp"><span class="about_title">TITLE</span></div>
-    <div class="about_img"></div>
-    <textarea class="about_text"></textarea>
-    <button class="about_edit">EDIT</button>
+
 </div>
 
 <div class="aboutUsBoxUp">
     <form class="UpAboutForm" enctype="multipart/form-data">
-        <input class="text_title" maxlength="15" name="inp_name" placeholder="Name" id="text_title" type="text"> <br>
+        <input class="text_title" maxlength="15" name="inp_name" placeholder="Name"  type="text"> <br>
         <span class="errorName"></span>
         <input type="hidden" name="className" value="MenuIcons">
-        <input type="hidden" name="actionName" value="aboutUs">
-        <label for="uploadImage" class="custom-file-upload">Icon Upload</label>
+        <input type="hidden" name="actionName" value="UpdateAboutUs">
+        <label for="updateAboutImage" class="custom-file-upload">Icon Upload</label>
+        <input id="updateAboutImage" name="text-upload" class="text-upload" accept="image/*" type="file"/> <br>
         <span class="errorFile"></span>
-        <input id="uploadImage" name="text-upload" class="text-upload" accept="image/*" type="file"/> <br>
         <textarea class="text_box" name="text_box"></textarea>
         <input  class="btn_text" type="submit" value="UPDATE">
         <img class="close_cont js-close" src="/adminka/test/close4.png">
@@ -58,9 +54,10 @@
         <input type="hidden" name="className" value="MenuIcons">
         <input type="hidden" name="actionName" value="aboutUs">
         <label for="uploadImage" class="custom-file-upload">Icon Upload</label>
-        <span class="errorFile"></span>
         <input id="uploadImage" name="text-upload" class="text-upload" accept="image/*" type="file"/> <br>
+        <span class="errorFile"></span>
         <textarea class="text_box" name="text_box"></textarea>
+        <span class="errorTextArea"></span>
         <input  class="btn_text" type="submit" value="SAVE">
         <img class="close_cont js-close" src="/adminka/test/close4.png">
     </form>
