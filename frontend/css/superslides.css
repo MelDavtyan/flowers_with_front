@@ -5,7 +5,7 @@
   display: none;
 }
 #slides .scrollable {
-  *zoom: 1;
+  *zoom: 2;
   position: relative;
   top: 0;
   left: 0;
@@ -62,5 +62,5 @@
   text-align: center;
 }
 .slides-pagination a.current {
-  background: #222;
+  background: #af103b;
 }

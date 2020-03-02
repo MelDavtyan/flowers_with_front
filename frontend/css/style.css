@@ -1084,7 +1084,7 @@ ul.cart-list > li.total > .btn:hover {
 .products-box {
     background-color: #ffffff;
     padding: 70px 0px;
-    margin-bottom: 400px;
+    margin-bottom: 200px;
 }
 
 .products-box-gal {
@@ -3085,10 +3085,10 @@ ul.cart-list > li.total > .btn:hover {
     margin-left: 5px;
 }
 
-.pagination {
-    /*background-color: #8200ff;*/
-    width: auto;
-    height: auto;
+.pagGal {
+    background-color: #8200ff;
+    /*width: 250px;*/
+    /*height: 100px;*/
     justify-content: center;
     display: flex;
 }
@@ -3118,4 +3118,21 @@ ul.cart-list > li.total > .btn:hover {
 }
 
 
+.sld_img{
+    width: 290px;
+    height: 290px;
 
+}
+
+.slider{
+    background: #000000;
+    height: 300px;
+    padding-top: 20px;
+    padding-left: 50px;
+    /*padding-right: 50px;*/
+}
+
+
+.thing{
+
+}

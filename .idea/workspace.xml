@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a687350d-ffa2-4f78-998e-e6e13322d166" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/adminka/js/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminka/js/contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminka/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminka/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminka/css/menu_icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/adminka/css/menu_icons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminka/js/menu_icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/adminka/js/menu_icons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminka/php/MenuIcons.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminka/php/MenuIcons.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminka/php/MenuItems.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminka/php/MenuItems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminka/php/menu_icons.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminka/php/menu_icons.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/contact-us.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/contact-us.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/css/owl.carousel.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/owl.carousel.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/css/superslides.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/superslides.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/gallery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/js/owl.carousel.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/shop.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,15 +50,185 @@
     <expand />
     <select />
   </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/adminka/css/menu_icons.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="266">
+                  <caret line="445" column="32" lean-forward="true" selection-start-line="445" selection-start-column="6" selection-end-line="445" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/frontend/js/menu.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="575">
+                  <caret line="182" column="77" lean-forward="true" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/adminka/php/MenuItems.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="818">
+                  <caret line="289" column="5" lean-forward="true" selection-start-line="289" selection-start-column="5" selection-end-line="289" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/frontend/css/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="3090" column="22" selection-start-line="3090" selection-start-column="22" selection-end-line="3090" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/adminka/js/contact.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="220">
+                  <caret line="37" column="14" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/adminka/js/about.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="550">
+                  <caret line="109" column="28" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
+                  <folding>
+                    <element signature="n#style#0;n#img#0;n#div#1;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/adminka/js/menu_icons.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-551">
+                  <caret line="79" column="46" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="46" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/frontend/gallery.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="594">
+                  <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/frontend/js/menu.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="126" column="16" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>contact_mod</find>
+      <find>sl</find>
+      <find>slider</find>
+      <find>main-ins</find>
+      <find>owl-carousel</find>
+      <find>carousel</find>
+      <find>instagram-box</find>
+      <find>/*</find>
+      <find>text_</find>
+      <find>contact_m</find>
+      <find>please fi</find>
+      <find>contact_i</find>
+      <find>contact_te</find>
+      <find>text_cont</find>
+      <find>name=&quot;text_box&quot;</find>
+      <find>button</find>
+      <find>btn</find>
+      <find>title_t</find>
+      <find>pagination</find>
+      <find>paginationGal</find>
+      <find>text_t</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/adminka/js/menu_icons.js" />
+        <option value="$PROJECT_DIR$/frontend/shop.php" />
+        <option value="$PROJECT_DIR$/frontend/about.php" />
+        <option value="$PROJECT_DIR$/frontend/css/superslides.css" />
+        <option value="$PROJECT_DIR$/frontend/css/owl.carousel.min.css" />
+        <option value="$PROJECT_DIR$/frontend/css/all.css" />
+        <option value="$PROJECT_DIR$/frontend/css/slider.css" />
+        <option value="$PROJECT_DIR$/frontend/css/slick.css" />
+        <option value="$PROJECT_DIR$/frontend/header.php" />
+        <option value="$PROJECT_DIR$/frontend/index.php" />
+        <option value="$PROJECT_DIR$/frontend/js/owl.carousel.min.js" />
+        <option value="$PROJECT_DIR$/adminka/php/MenuIcons.php" />
+        <option value="$PROJECT_DIR$/frontend/footer.php" />
+        <option value="$PROJECT_DIR$/adminka/php/menu_icons.php" />
+        <option value="$PROJECT_DIR$/adminka/js/contact.js" />
+        <option value="$PROJECT_DIR$/adminka/css/menu_icons.css" />
+        <option value="$PROJECT_DIR$/adminka/js/about.js" />
+        <option value="$PROJECT_DIR$/adminka/admin.php" />
+        <option value="$PROJECT_DIR$/frontend/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/adminka/php/MenuItems.php" />
+        <option value="$PROJECT_DIR$/frontend/css/style.css" />
+        <option value="$PROJECT_DIR$/frontend/gallery.php" />
+        <option value="$PROJECT_DIR$/frontend/js/menu.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="575" />
+    <option name="y" value="68" />
+    <option name="width" value="1029" />
+    <option name="height" value="817" />
+  </component>
   <component name="ProjectId" id="1Y9yCEEjnMTFJA3p454YKgFiQRk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pordznakan" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
@@ -76,8 +260,41 @@
       <workItem from="1582665540359" duration="3813000" />
       <workItem from="1582727545474" duration="9855000" />
       <workItem from="1582749355987" duration="11342000" />
+      <workItem from="1583001958659" duration="11092000" />
+      <workItem from="1583062236359" duration="6330000" />
+      <workItem from="1583094113253" duration="6096000" />
+      <workItem from="1583158544763" duration="24510000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="48028000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16731517" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286908" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.3286908" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -88,11 +305,236 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/adminka/php/MenuIcons.php</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/js/menu.js</url>
+          <line>166</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/frontend/css/superslides.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminka/css/menu_items.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="183" column="1" selection-start-line="183" selection-start-column="1" selection-end-line="183" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-639">
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/css/owl.carousel.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="206" column="1" selection-start-line="5" selection-end-line="206" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/css/all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102917" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/js/slick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/css/slider.css" />
+    <entry file="file://$PROJECT_DIR$/../slider/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/css/slick.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2222">
+          <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="22" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/js/owl.carousel.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5412" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminka/php/MenuIcons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="180" column="47" lean-forward="true" selection-start-line="180" selection-start-column="42" selection-end-line="180" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="129" column="25" lean-forward="true" selection-start-line="129" selection-start-column="25" selection-end-line="129" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminka/php/menu_icons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminka/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1056">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminka/js/menu_icons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-551">
+          <caret line="79" column="46" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="4571" column="20" lean-forward="true" selection-start-line="4571" selection-start-column="20" selection-end-line="4571" selection-end-column="20" />
+          <folding>
+            <element signature="e#74775#74975#2" expanded="true" />
+            <element signature="e#75207#75356#2" expanded="true" />
+            <element signature="e#75922#76068#2" expanded="true" />
+            <element signature="e#76436#76602#1" expanded="true" />
+            <element signature="e#90407#90650#2" expanded="true" />
+            <element signature="e#91667#91916#2" expanded="true" />
+            <element signature="e#125106#125296#2" expanded="true" />
+            <element signature="e#125352#125542#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminka/js/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="109" column="28" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminka/css/menu_icons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="445" column="32" lean-forward="true" selection-start-line="445" selection-start-column="6" selection-end-line="445" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminka/js/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="3090" column="22" selection-start-line="3090" selection-start-column="22" selection-end-line="3090" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/shop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1405">
+          <caret line="16" column="184" selection-start-line="16" selection-start-column="174" selection-end-line="16" selection-end-column="187" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/js/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="182" column="77" lean-forward="true" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminka/php/MenuItems.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="818">
+          <caret line="289" column="5" lean-forward="true" selection-start-line="289" selection-start-column="5" selection-end-line="289" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

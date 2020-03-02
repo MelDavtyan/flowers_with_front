@@ -1,4 +1,8 @@
-
+<?php include '../adminka/php/MenuIcons.php';
+$menuIcon = new MenuIcons('localhost','root','','flowers');
+$contactUs = $menuIcon->mysqli->query("SELECT * FROM `contactus`")->fetch_assoc();
+//print_r($contactUs['email']);
+?>
     <footer>
         <div class="footer-main">
             <div class="container">
@@ -17,13 +21,13 @@
 							<form class="newsletter-box">
                                 <ul>
                                     <li>
-                                        <p>Address: Michael I. Days 9000 <br>Preston Street Wichita,<br> KS 87213 </p>
+                                        <p>Address: <?php echo $contactUs['address']; ?></p>
                                     </li><br>
                                     <li>
-                                        <p>Phone: +1-888 705 770</p>
+                                        <p>Phone: <?php echo $contactUs['phone']; ?></p>
                                     </li><br>
                                     <li>
-                                        <p>Email: contactinfo@gmail.com</p>
+                                        <p>Email: <?php echo $contactUs['email']; ?></p>
                                     </li>
                                 </ul>
 						</div>
@@ -59,6 +63,9 @@
 
     <a href="#" id="back-to-top" title="Back to top" style="display: none;"><img class="up_arrow" src="images/triangle_w.png"></a>
 
+
+
+
     <!-- ALL JS FILES -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -67,7 +74,7 @@
     <script src="js/jquery.superslides.min.js"></script>
     <script src="js/bootstrap-select.js"></script>
     <script src="js/inewsticker.js"></script>
-    <script src="js/bootsnav.js."></script>
+    <script src="js/bootsnav.js"></script>
     <script src="js/images-loded.min.js"></script>
     <script src="js/isotope.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -75,3 +82,6 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/slick.js" type="text/javascript"></script>
+
+

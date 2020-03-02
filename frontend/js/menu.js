@@ -93,21 +93,26 @@ $(document).ready(function () {
             }
         }
     })
-
-    $.ajax({
-        method: "POST",
-        url: "../adminka/php/menu_items.php",
-        data: {
-            className: 'MenuItems',
-            actionName: 'slider',
-        },
-        success: function (resp) {
-            let images = JSON.parse(resp);
-            console.log(images);
-            let htmlText = images['html'];
-            $('.main-instagram').html(htmlText);
-        }
-    })
+        //
+        // $.ajax({
+        //     method: "POST",
+        //     url: "../adminka/php/menu_items.php",
+        //     data: {
+        //         className: 'MenuItems',
+        //         actionName: 'slider',
+        //     },
+        //     success: function (resp) {
+        //         let res = JSON.parse(resp);
+        //         for (let i = 0; i < res.length; i++) {
+        //             let inner = '<div class="thing" id="wrapper">\n' +
+        //                 ' <div>\n' +
+        //                 '<img class="sld_img" src="' + res[i]['path'] + '" alt="slider image">\n' +
+        //                 '</div>\n' +
+        //                 '</div>';
+        //             $('.slider').append(inner);
+        //         }
+        //     }
+        // })
 
 
     getAllItems();
@@ -125,10 +130,10 @@ $(document).ready(function () {
                 let res = JSON.parse(response);
                 console.log(res);
                 $('.special-list_gal').empty();
-                $('.pagination').empty();
+                $('.pagGal').empty();
 
                 $('.special-list_gal').append(res['html']);
-                $('.pagination').append(res['paginationGal']);
+                $('.pagGal').append(res['paginationGal']);
             }
         })
         $(document).on('click', '.pagination_btn', function () {

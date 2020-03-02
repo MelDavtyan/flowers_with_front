@@ -13,8 +13,8 @@ if (isset($_GET['id']) || isset($_GET['page'])) {
     $items = $obj->mysqli->query("SELECT * FROM `menu_items` WHERE `menu_id` = $id AND `status` = 'show' ORDER BY `id` DESC LIMIT $start , $limit");
     function pagination($length, $page, $id)
     {
-        for ($i = 1; $i < $length; $i++) {
-            echo '<a style="z-index:4" href="shop.php?id=' . $id . '&page=' . $i . '">' . $i . '</a>';
+        for ($i = 1; $i <= $length; $i++) {
+            echo '<!--<div class="pagination_btn">--><a class="pagination_link pagination_btn" style="z-index:4" href="shop.php?id=' . $id . '&page=' . $i . '">' . $i . '</a><!--</div>-->';
         }
     }
 }

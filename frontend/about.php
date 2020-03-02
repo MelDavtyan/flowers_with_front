@@ -1,5 +1,5 @@
-<?php include '../adminka/php/MenuIcons.php';
-$menuIcon = new MenuIcons('localhost','root','','flowers');
+<?php include '../adminka/php/MenuItems.php';
+$menuIcon = new MenuItems('localhost','root','','flowers');
 $aboutAs = $menuIcon->mysqli->query("SELECT * FROM `aboutus`")->fetch_assoc();
 //print_r($aboutAs['title']);
 

@@ -231,21 +231,12 @@ class MenuItems
     public function slider()
     {
         $slider = $this->mysqli->query("SELECT `path` FROM `menu_items` WHERE `status` = 'show' LIMIT 10");
-        $imageOut = '';
+        $imageOut = [];
         while ($row = mysqli_fetch_assoc($slider)) {
-            $imageOut .= '<div class="item">
-                    <div class="ins-inner-box">
-                        <img src="' . $row['path'] . '" style="height: 200px;width: 200px" alt="" />
-                        <div class="hov-in">
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>';
+            array_push($imageOut, $row);
         }
-        $imageList = [
-            'html' => $imageOut,
-        ];
-        echo json_encode($imageList);
+
+        echo json_encode($imageOut);
     }
 
     public function gallary()
@@ -259,14 +250,14 @@ class MenuItems
             $page = 1;
         }
 
-             $start_from = ($page - 1) * $record_per_page;
+        $start_from = ($page - 1) * $record_per_page;
 
 
 
         $sale = $this->mysqli->query("SELECT `path` FROM `menu_items` WHERE `status` = 'show' ORDER BY `id` DESC LIMIT $start_from, $record_per_page ");
 
         while ($row = mysqli_fetch_assoc($sale)) {
-            $output .= '    <div class="col-lg-3 col-md-6 ">' .
+            $output .= '    <div class="col-lg-3 col-md-6 special-grid">' .
                 '            <div class="products-single fix">' .
                 '            <div class="box-img-hover">' .
                 '            <img src="' . $row['path'] . '" class="img-fluid" alt="Image">'.
@@ -274,19 +265,17 @@ class MenuItems
                 '            </div>'.
                 '            </div>';
         }
-
-
         $page_query = "SELECT * FROM `menu_items` WHERE `status` = 'show' ORDER BY `id` DESC";
         $page_result = $this->mysqli->query($page_query);
         $total_records = mysqli_num_rows($page_result);
         $total_pages = ceil($total_records / $record_per_page);
-        $paginationGal = '';
+        $pagination = '';
         for ($i = 1; $i <= $total_pages; $i++) {
-            $paginationGal .= '<div class="pagination_btn active"><span class = "pagination_link" id="' . $i . '">' . $i . '</span></div>';
+            $pagination .= '<div class="pagination_btn"><span class = "pagination_link" id="' . $i . '">' . $i . '</span></div>';
         }
         $res = [
             'html' => $output,
-            'paginationGal' => $paginationGal,
+            'paginationGal'=> $pagination,
         ];
 //        print_r($res['html']);die;
         echo json_encode($res);

@@ -14,7 +14,7 @@ class MenuIcons
 
     public function __destruct()
     {
-      $this->mysqli->close();
+        $this->mysqli->close();
     }
 
     public function checkImage($file){
@@ -49,7 +49,7 @@ class MenuIcons
         return $result;
     }
 
-     public function saveIcons($iconName)
+    public function saveIcons($iconName)
     {
         $this->checkImage($_FILES['file-upload']);
         $this->mysqli->query("INSERT INTO `menu_icons` (name,path) VALUES ('$iconName','$this->imagePath')");
@@ -81,17 +81,17 @@ class MenuIcons
     public function updateIcon($iconName)
     {
         $this->checkImage($_FILES['file-upload']);
-            $iconIda = $_POST['hiddenInput'];
-            if (!empty($_FILES["file-upload"]) && $_FILES["file-upload"]["size"] > 0){
-               $this->imagePath = str_replace('..', '/adminka', $this->target_file);
-            }else{
-                $this->imagePath = $this->mysqli->query("SELECT `path` FROM `menu_icons` WHERE `id` = '$iconIda'")->fetch_row()[0];
-            }
-            $this->mysqli->query("UPDATE `menu_icons` SET `name` = '$iconName',`path` = '$this->imagePath' WHERE `id` = '$iconIda'");
+        $iconIda = $_POST['hiddenInput'];
+        if (!empty($_FILES["file-upload"]) && $_FILES["file-upload"]["size"] > 0){
+            $this->imagePath = str_replace('..', '/adminka', $this->target_file);
+        }else{
+            $this->imagePath = $this->mysqli->query("SELECT `path` FROM `menu_icons` WHERE `id` = '$iconIda'")->fetch_row()[0];
+        }
+        $this->mysqli->query("UPDATE `menu_icons` SET `name` = '$iconName',`path` = '$this->imagePath' WHERE `id` = '$iconIda'");
 
 
         $allIcons = $this->query("SELECT * FROM `menu_icons` WHERE `path` = '$this->imagePath'");
-       echo json_encode($allIcons);
+        echo json_encode($allIcons);
     }
 
     public function daleteIcon($dataId)
@@ -114,8 +114,8 @@ class MenuIcons
         $this->mysqli->query("UPDATE `menu_items` SET `status` = 'show' WHERE `menu_id` = '$dataId'");
 
         $success = [
-        'success' => [
-            'message' => 'Item  was deleted',
+            'success' => [
+                'message' => 'Item  was deleted',
             ]
         ];
         echo json_encode($success);
@@ -142,7 +142,7 @@ class MenuIcons
             $this->mysqli->query("INSERT INTO `aboutus` (title,image,text,flag) VALUES ('$title','$this->imagePath','$text','about us')");
         }
 
-       $allIcons = $this->query("SELECT * FROM `aboutus` WHERE `image` = '$this->imagePath'");
+        $allIcons = $this->query("SELECT * FROM `aboutus` WHERE `image` = '$this->imagePath'");
 
         echo $this->mysqli->error;
         echo json_encode($allIcons);
@@ -173,11 +173,55 @@ class MenuIcons
     }
 
     public function getAllItemsFromAboutUs(){
-       $allItemsFromAboutUs = $this->query("SELECT * FROM `aboutus`");
+        $allItemsFromAboutUs = $this->query("SELECT * FROM `aboutus`");
 //       print_r($allItemsFromAboutUs);die;
         echo json_encode($allItemsFromAboutUs);
 
     }
+    public function contactUs ($address,$phone,$email)
+    {
+//        print_r($_POST);
 
+        $allFromContactUs = $this->query("SELECT * FROM `contactus`");
+//        print_r($allFromAboutUs);die;
+        if($allFromContactUs){
+            if($allFromContactUs[0]['status'] == 'contact us'){
+                $this->mysqli->query("UPDATE `contactus` SET address = '$address',phone = '$phone',email = '$email',status = 'contact us'") ;
+            }
+        }else{
+            $this->mysqli->query("INSERT INTO `contactus` (address,phone,email,status) VALUES ('$address','$phone','$email','contact us')");
+//            echo
+        }
+
+        $allIcons = $this->query("SELECT * FROM `contactus`");
+
+        echo $this->mysqli->error;
+        echo json_encode($allIcons);
+    }
+
+    public function editContactUsData(){
+
+        $dataFromContactUs = $this->query("SELECT * FROM `contactus`");
+        echo json_encode($dataFromContactUs);
+//        print_r($dataFromContactUs);
+    }
+
+    public function UpdateContactUs($address,$phone,$email){
+//        print_r($_POST);
+//        print_r($_FILES['text-upload']);die;
+
+        $this->mysqli->query("UPDATE `contactus` SET `address` = '$address',`phone` = '$phone',`email` = '$email',`status` = 'contact us'");
+        $allIcons = $this->query("SELECT * FROM `contactus` WHERE `email` = '$email'");
+//        print_r($allIcons);
+
+        echo json_encode($allIcons);
+    }
+
+    public function getAllItemsFromContactUs(){
+        $allItemsFromContactUs = $this->query("SELECT * FROM `contactus`");
+//
+        echo json_encode($allItemsFromContactUs);
+
+    }
 }
 

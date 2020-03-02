@@ -31,8 +31,9 @@
         <div class="row special-list_gal">
 
         </div>
-        <div class="pagination container"></div>
+        <div class="container pagGal"></div>
     </div>
+
 </div>
 
 <!-- End Gallery  -->
